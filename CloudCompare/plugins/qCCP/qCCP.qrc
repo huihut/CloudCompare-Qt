@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/CC/plugin/qCCP">
+        <file>qCCP.png</file>
+    </qresource>
+</RCC>

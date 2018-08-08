@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SFArithmeticsDlg</class>
+ <widget class="QDialog" name="SFArithmeticsDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Scalar fields arithmetics</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="comboLabel">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>SF 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="sf1ComboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="comboLabel_3">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>operation</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="operationComboBox">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="maxVisibleItems">
+        <number>20</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>plus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>minus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>multiply</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>divided by</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>square root</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>power of 2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>power of 3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>exp</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>log</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>log10</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>cos</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>sin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>tan</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>acos</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>asin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>atan</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>integer part</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>inverse (1/x)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="comboLabel_2">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>SF 2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="sf2ComboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QDoubleSpinBox" name="constantDoubleSpinBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="decimals">
+        <number>6</number>
+       </property>
+       <property name="minimum">
+        <double>-1000000.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>1000000.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>1.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="updateSF1CheckBox">
+     <property name="toolTip">
+      <string>Update the first scalar field directly (instead of creating a new SF)</string>
+     </property>
+     <property name="text">
+      <string>Update SF1 directly</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SFArithmeticsDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>151</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SFArithmeticsDlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>99</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
