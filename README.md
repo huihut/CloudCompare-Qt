@@ -10,7 +10,7 @@
 
 ### 扫描角度过滤插件：qSAF
 
-* 本仓库路径：[qSAF](CloudCompare/plugins/qSAF)
+* 本仓库路径：[qSAF](CloudCompare/plugins/qSAF)
 * 原仓库路径：[qSAF](https://github.com/huihut/qSAF)
 
 ## CloudCompare开发环境配置 (CentOS)
