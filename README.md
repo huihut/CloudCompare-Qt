@@ -2,7 +2,7 @@
 
 基于[CloudCompare](https://github.com/CloudCompare/CloudCompare)官方源码构建的第三方Qt工程，直接可用Qt打开，修改好你的`.pro`文件库路径即可运行，无需Visual Studio，无需CMake，支持Windows、MacOS、Linux。
 
-* 构建时间：2017/01/03
+* 构建时间：2017/03/01
 * 构建版本：~~好像是~~ CloudCompare Version 2.8.0
 * 作者：Kenny Liu、[Eric](https://github.com/Eric7Coding)、[Menghui Xie](https://github.com/huihut)
 
