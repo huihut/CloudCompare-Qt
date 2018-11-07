@@ -90,7 +90,7 @@
 		# 安装命令如：
 		brew install boost
 
-	![brew_lib](http://ojlsgreog.bkt.clouddn.com/brew_lib.jpg)
+	![brew_lib](https://huihut-img.oss-cn-shenzhen.aliyuncs.com/brew_lib.jpg)
 
 3. 修改项目中 `.pro` 文件的 `macx` 中库路径，即
 
